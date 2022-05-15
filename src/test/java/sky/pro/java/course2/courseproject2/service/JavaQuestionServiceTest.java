@@ -11,7 +11,7 @@ class JavaQuestionServiceTest {
 
     @Test
     public void shouldReturnQUESTION_TESTWhenAdd() {
-        assertEquals (QUESTION_TEST, out.add("Что такое цикл?", "Это много раз."));
+        assertEquals (QUESTION_TEST, out.add("Что такое цикл?", "Это когда много раз."));
     }
 
     @Test
@@ -33,6 +33,4 @@ class JavaQuestionServiceTest {
     public void checkNotNullWhenGetRandomQuestion() {
         assertNotNull(out.getRandomQuestion());
     }
-
-
 }

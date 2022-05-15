@@ -15,5 +15,5 @@ public class QuestionServiceTestConstants {
     ));
 
     public static final Question QUESTION_TEST = new Question("Что такое цикл?",
-            "Это много раз.");
+            "Это когда много раз.");
 }
