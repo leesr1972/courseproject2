@@ -11,13 +11,7 @@ import java.util.Set;
 
 @Service
 public class JavaQuestionService implements QuestionService{
-    public static final Set<Question> questions = new HashSet<>(Set.of(
-            new Question("Что такое цикл?", "Это когда много раз."),
-            new Question("Что такое массив?", "Это хранилище."),
-            new Question("Что такое мок?", "Это заглушка."),
-            new Question("Что такое метод?", "Это подпрограмма."),
-            new Question("Что такое рекурсия?", "Это когда сам себя.")
-    ));
+    private final Set<Question> questions = new HashSet<>();
 
     @Override
     public Question add(String question, String answer) {
